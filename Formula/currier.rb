@@ -1,28 +1,28 @@
 class Currier < Formula
   desc "Vim-modal TUI API client for developers and AI agents"
   homepage "https://github.com/artpar/currier"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/artpar/currier/releases/download/v0.1.1/currier_0.1.1_darwin_amd64.tar.gz"
-      sha256 "a07829a10c372f58b7319a96e734da412004467307fa2f424f5df4eb00b05690"
+      url "https://github.com/artpar/currier/releases/download/v0.1.2/currier_0.1.2_darwin_amd64.tar.gz"
+      sha256 "21ae7e7ff37063e2beb39877ef24b241d32de0c933161b40ca334cfa2f6ac8e6"
     end
     on_arm do
-      url "https://github.com/artpar/currier/releases/download/v0.1.1/currier_0.1.1_darwin_arm64.tar.gz"
-      sha256 "e86599d46be0b3f6a4716b3f882417c4c10dd50d347b957235a8c5d9793306b6"
+      url "https://github.com/artpar/currier/releases/download/v0.1.2/currier_0.1.2_darwin_arm64.tar.gz"
+      sha256 "039dd98f895e24cd27b5f8a2c4ba74fc93384d223dc113f6c1fefbb9786d66cc"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/artpar/currier/releases/download/v0.1.1/currier_0.1.1_linux_amd64.tar.gz"
-      sha256 "46043c30afac289baecded74cc34ad3c461e0bc2e0194dce1866a2ade845a283"
+      url "https://github.com/artpar/currier/releases/download/v0.1.2/currier_0.1.2_linux_amd64.tar.gz"
+      sha256 "5bd184d97cd03ac6d50b0d530421c7a033ea5714ce2a3b98daa1ef4ccb6571bf"
     end
     on_arm do
-      url "https://github.com/artpar/currier/releases/download/v0.1.1/currier_0.1.1_linux_arm64.tar.gz"
-      sha256 "1cd90ca5745c9829e57d71fbd4d966b1ac40f1356db030d5901f5aabce2938bd"
+      url "https://github.com/artpar/currier/releases/download/v0.1.2/currier_0.1.2_linux_arm64.tar.gz"
+      sha256 "38032bb4e854a1825cfbf818a3b25488255c128ffa68651e709974eab3238122"
     end
   end
 
