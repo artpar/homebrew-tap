@@ -5,21 +5,21 @@
 class Currier < Formula
   desc "Vim-modal TUI API client for developers and AI agents"
   homepage "https://github.com/artpar/currier"
-  version "0.1.21"
+  version "0.1.22"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/artpar/currier/releases/download/v0.1.21/currier_darwin_amd64.tar.gz"
-      sha256 "e095b2631d94d1edb9477b8cd3dfc650cf9db48f371d56d1bd323b1d45623e34"
+      url "https://github.com/artpar/currier/releases/download/v0.1.22/currier_darwin_amd64.tar.gz"
+      sha256 "81fdad0137cedd988d7abffb7d9e6aa8210e8185d6aabc2fb7e26ee82bdb15f4"
 
       def install
         bin.install "currier"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/artpar/currier/releases/download/v0.1.21/currier_darwin_arm64.tar.gz"
-      sha256 "f56ac883577abd33a2e5b3094083eb5d5ab7740b13b794c2d7fef7a8feb7a39d"
+      url "https://github.com/artpar/currier/releases/download/v0.1.22/currier_darwin_arm64.tar.gz"
+      sha256 "b09bccf3a35da8117df1185c0e100e37a86003a331b18cfe9c39ea90d958f7e9"
 
       def install
         bin.install "currier"
@@ -29,15 +29,15 @@ class Currier < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/artpar/currier/releases/download/v0.1.21/currier_linux_amd64.tar.gz"
-      sha256 "e9654f47cf32eff4cc5f9d14c09edb2d58008fc234d7e49177a89ab9d0c67f82"
+      url "https://github.com/artpar/currier/releases/download/v0.1.22/currier_linux_amd64.tar.gz"
+      sha256 "1252cb9b31f286b345d23e6f4118055921c8baf8c950b83e544634615886fdc5"
       def install
         bin.install "currier"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/artpar/currier/releases/download/v0.1.21/currier_linux_arm64.tar.gz"
-      sha256 "d3093c3faf8285834415fc0d96411f4f3edc0bce5af26382e362460d82a4a5b8"
+      url "https://github.com/artpar/currier/releases/download/v0.1.22/currier_linux_arm64.tar.gz"
+      sha256 "500d5eca6a16d8d28e6f3cfb0de0232e5265540ec162d8198d2dbcc1d0946d39"
       def install
         bin.install "currier"
       end
