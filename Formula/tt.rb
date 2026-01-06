@@ -1,28 +1,28 @@
 class Tt < Formula
   desc "P2P terminal sharing with E2E encryption"
   homepage "https://github.com/artpar/terminal-tunnel"
-  version "1.4.1"
+  version "1.5.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/artpar/terminal-tunnel/releases/download/v1.4.1/tt-darwin-arm64.tar.gz"
-      sha256 "7e1bab4e07ab0d38a6e846793a812fb557144bcf0eb18acc99f8368e240a9cdd"
+      url "https://github.com/artpar/terminal-tunnel/releases/download/v1.5.2/tt_darwin_arm64.tar.gz"
+      sha256 "48cd2777161da3c752825e98506ca384d625617b7517e5198cce5d522ffdc12c"
     end
     on_intel do
-      url "https://github.com/artpar/terminal-tunnel/releases/download/v1.4.1/tt-darwin-amd64.tar.gz"
-      sha256 "1a7c99b084b50218d0bb57d58f8615238b95e140dd881fbedb59444dd735ab9b"
+      url "https://github.com/artpar/terminal-tunnel/releases/download/v1.5.2/tt_darwin_x86_64.tar.gz"
+      sha256 "ce700fe605e2beb4a0a239644c594ff1834e9526b99c0d7b680acb73c3abe0cf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/artpar/terminal-tunnel/releases/download/v1.4.1/tt-linux-arm64.tar.gz"
-      sha256 "d26e47c5aee205d6c83e905b63710e0007785ba239adc3ef3ee3eb885f924a91"
+      url "https://github.com/artpar/terminal-tunnel/releases/download/v1.5.2/tt_linux_arm64.tar.gz"
+      sha256 "ceee2e4d536cc4b3e546d276e63e0fff7c0053af0aec313af7760e10d7ef86b5"
     end
     on_intel do
-      url "https://github.com/artpar/terminal-tunnel/releases/download/v1.4.1/tt-linux-amd64.tar.gz"
-      sha256 "4aca59fead5ac921b6415321a4730b96b4f652f6ad7c079b64340031702425be"
+      url "https://github.com/artpar/terminal-tunnel/releases/download/v1.5.2/tt_linux_x86_64.tar.gz"
+      sha256 "edb0a11c6ccfb5e39bed8682e6c9d6c3c3e79b7b5322b63cf62ce4629e410026"
     end
   end
 
