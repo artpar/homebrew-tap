@@ -10,7 +10,7 @@ class Pragma < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/artpar/pragma-releases/releases/download/v0.1.0/pragma-releases_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b85fc3fbde1cdd82df27ec0f33d2738b845891ab690b358c1f02ee17f4c83874"
+      sha256 "e743a7155edc08c399ed3a7bc03a33780370c1ec2ad68849c2b760ddbfb282ed"
 
       def install
         bin.install "pragma"
@@ -21,7 +21,7 @@ class Pragma < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/artpar/pragma-releases/releases/download/v0.1.0/pragma-releases_0.1.0_darwin_arm64.tar.gz"
-      sha256 "fd8451adeb1cbe5deb0ddbf62caee0eb72950e47eb341384be97d473da553002"
+      sha256 "3f438c33884c8776abd7b634b9cd024c3f9042565c65303bd2f885bea8d6a793"
 
       def install
         bin.install "pragma"
@@ -35,7 +35,7 @@ class Pragma < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/artpar/pragma-releases/releases/download/v0.1.0/pragma-releases_0.1.0_linux_amd64.tar.gz"
-      sha256 "400680a6dc9b18e809137422c8af7ec2cd15f1b0dfbb52bae6a84b35e6690882"
+      sha256 "04846b3915e40bc7d4126faad321c43b29f592740c5c6f228055f60922f4264a"
       def install
         bin.install "pragma"
         bash_completion.install "completions/pragma.bash" => "pragma"
@@ -45,7 +45,7 @@ class Pragma < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/artpar/pragma-releases/releases/download/v0.1.0/pragma-releases_0.1.0_linux_arm64.tar.gz"
-      sha256 "377c3a886ade48f77130f635b6436e2472989026cd2a3dcdaa4f47f0b7521249"
+      sha256 "b973dd2237bd3d02fb70ab6a1d723d29feedc78bd0337d89f140d42f7caa746c"
       def install
         bin.install "pragma"
         bash_completion.install "completions/pragma.bash" => "pragma"
