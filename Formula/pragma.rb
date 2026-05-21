@@ -5,14 +5,14 @@
 class Pragma < Formula
   desc "AI coding assistant CLI powered by LLMs"
   homepage "https://github.com/artpar/pragma-releases"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/artpar/pragma-releases/releases/download/v0.1.0/pragma-releases_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e743a7155edc08c399ed3a7bc03a33780370c1ec2ad68849c2b760ddbfb282ed"
+      url "https://github.com/artpar/pragma-releases/releases/download/v0.1.1/pragma-releases_0.1.1_darwin_amd64.tar.gz"
+      sha256 "d24b13149ec48029d6948275bdd9aa4c2dbdf3213ce5f076aa23292917d26ccd"
 
-      def install
+      define_method(:install) do
         bin.install "pragma"
         bash_completion.install "completions/pragma.bash" => "pragma"
         zsh_completion.install "completions/pragma.zsh" => "_pragma"
@@ -20,10 +20,10 @@ class Pragma < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/artpar/pragma-releases/releases/download/v0.1.0/pragma-releases_0.1.0_darwin_arm64.tar.gz"
-      sha256 "3f438c33884c8776abd7b634b9cd024c3f9042565c65303bd2f885bea8d6a793"
+      url "https://github.com/artpar/pragma-releases/releases/download/v0.1.1/pragma-releases_0.1.1_darwin_arm64.tar.gz"
+      sha256 "b81e417cfb7d802871bfd6dab918a30b42e13fff79a054a862b51dcf1b7bb2a9"
 
-      def install
+      define_method(:install) do
         bin.install "pragma"
         bash_completion.install "completions/pragma.bash" => "pragma"
         zsh_completion.install "completions/pragma.zsh" => "_pragma"
@@ -34,9 +34,9 @@ class Pragma < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/artpar/pragma-releases/releases/download/v0.1.0/pragma-releases_0.1.0_linux_amd64.tar.gz"
-      sha256 "04846b3915e40bc7d4126faad321c43b29f592740c5c6f228055f60922f4264a"
-      def install
+      url "https://github.com/artpar/pragma-releases/releases/download/v0.1.1/pragma-releases_0.1.1_linux_amd64.tar.gz"
+      sha256 "1d386a9465002536af08f431d466e8f48aeb1e1a85f060b4d62d5b0a4ad94fc3"
+      define_method(:install) do
         bin.install "pragma"
         bash_completion.install "completions/pragma.bash" => "pragma"
         zsh_completion.install "completions/pragma.zsh" => "_pragma"
@@ -44,9 +44,9 @@ class Pragma < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/artpar/pragma-releases/releases/download/v0.1.0/pragma-releases_0.1.0_linux_arm64.tar.gz"
-      sha256 "b973dd2237bd3d02fb70ab6a1d723d29feedc78bd0337d89f140d42f7caa746c"
-      def install
+      url "https://github.com/artpar/pragma-releases/releases/download/v0.1.1/pragma-releases_0.1.1_linux_arm64.tar.gz"
+      sha256 "6f1aec7126056b1560471a4fde3246d32f281b92f9bd9c6e61e60864a8a0b2db"
+      define_method(:install) do
         bin.install "pragma"
         bash_completion.install "completions/pragma.bash" => "pragma"
         zsh_completion.install "completions/pragma.zsh" => "_pragma"
